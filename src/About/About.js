@@ -61,9 +61,13 @@ function Contact() {
             </div>
             <div className="reference">
               <p>
-                If you have a boss that will provide a reference but can't do it
-                on company letterhead or on company time, they may be willing to
-                do so via a personal email address.
+                Zemelat is an exceptional developer who possesses all the skills
+                one would want in an excellent software developer. he masters
+                the top programming languages. as far as I know, He had done on
+                several projects, and I found him a highly skilled and dedicated
+                . and he is also genius backend development. I highly recommend
+                him to anyone looking for help on their team or designing
+                project.
               </p>
               <p className="email">email: birukanley2022@gmail.com</p>
             </div>
