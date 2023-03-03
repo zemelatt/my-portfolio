@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Kaushan+Script&family=Lobster+Two&family=Rubik+Vinyl&family=Satisfy&family=Spectral:ital,wght@1,200&display=swap");
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+}
+.logo {
+  width: 100%;
+  background-color: rgb(242, 237, 237);
+  color: brown;
+  font-size: 2.2rem;
+  font-family: "Rubik Vinyl";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Navigationlist li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav {
+  z-index: 10;
+  width: 100%;
+  height: 4em;
+  background-color: rgb(242, 237, 237);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  position: sticky;
+  top: 0;
+}
+
+.Navigationlist li {
+  margin: 1%;
+  float: right;
+  width: 4rem;
+  border-radius: 10px;
+  padding: 0.1rem 0.6em;
+}
+ul li:first-child {
+  padding-left: 2%;
+  float: left;
+  box-shadow: none;
+}
+ul > li {
+  font-size: 1.6em;
+}
+
+.humburger,
+.bar {
+  display: none;
+}
+.side-Option {
+  display: none;
+}
+#burger-op {
+  color: #ffffff;
+}
+#burger-op:hover {
+  color: bisque;
+}
+.hidden {
+  display: none;
+}
+@media only screen and (max-width: 750px) {
+  .Navigationlist li {
+    display: none;
+  }
+  ul li:first-child {
+    display: block;
+  }
+  .NavigationOnSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  .dropdown {
+    display: none;
+  }
+  .humburger {
+    display: block;
+    float: right;
+    margin: 1em;
+    width: 45px;
+    height: 35px;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  .humburger .bar,
+  .humburger:after,
+  .humburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(196, 31, 31);
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+  .humburger.is-active::before {
+    transform: rotate(315deg) translate(-9px, 6px);
+  }
+  .humburger.is-active::after {
+    transform: rotate(-315deg) translate(-10px, -8px);
+  }
+  .humburger.is-active .bar {
+    opacity: 0;
+  }
+
+  .side-Option {
+    top: 4em;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(242, 237, 237);
+    border: 1px solid rgb(243, 235, 235);
+    width: 60%;
+    height: 70vh;
+    margin-left: 40%;
+    right: -70%;
+    transition: 0.5s;
+  }
+  .side-Option.activate {
+    line-height: 2.5rem;
+    height: 70vh;
+    right: 0;
+    transition: 0.5s;
+    padding-right: auto;
+    padding-left: auto;
+    z-index: 30;
+  }
+  #op2 {
+    color: #ffffff;
+  }
+  #op2:hover {
+    color: rgb(233, 230, 227);
+  }
+  .humList:hover {
+    background-color: aliceblue;
+    padding: 0em 1em;
+  }
+}

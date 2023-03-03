@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Kaushan+Script&family=Lobster+Two&family=Satisfy&family=Spectral:ital,wght@1,200&display=swap");
+.Home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  background-color: rgb(234, 239, 244);
+}
+
+.prof_img {
+  position: relative;
+  aspect-ratio: 1 / 0.82;
+  display: grid;
+  align-items: end;
+  border-radius: 0 0 100vw 100vw;
+  z-index: 0;
+  overflow: hidden;
+  transition: transform 250ms ease-in-out;
+}
+.prof_img:hover {
+  transform: scale(1.1);
+}
+.prof_img:hover .photo {
+  transform: scale(1.2) translateY(-1.5rem);
+}
+.photo {
+  height: 30em;
+  padding-left: auto;
+  padding-right: auto;
+  transform: scale(1.1);
+  transition: transform 350ms ease;
+}
+.circle {
+  position: absolute;
+  width: 15em;
+  height: 25em;
+  bottom: 0;
+  background-color: brown;
+  z-index: -1;
+  object-fit: cover;
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 50%;
+  inset: auto 0 0;
+}
+
+.hello {
+  color: rgb(194, 10, 10);
+  font-size: 4em;
+}
+.moreIntro {
+  font-size: 2.6em;
+  color: rgb(106, 118, 118);
+  font-family: "Roboto", sans-serif;
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: flex-start;
+  width: 35%;
+  /* font-size: calc(1em + 0.4vw); */
+}
+
+.bubble1,
+.bubble2,
+.bubble3,
+.bubble4,
+.bubble5,
+.bubble6,
+.bubble7,
+.bubble8 {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background-color: rgba(217, 38, 38, 0.1);
+  overflow: hidden;
+}
+.bubble1 {
+  top: 7em;
+  right: 4em;
+}
+.bubble2 {
+  top: 28em;
+  left: 8em;
+}
+.bubble3 {
+  top: 18em;
+  left: 28em;
+}
+.bubble4 {
+  top: 11em;
+  right: 15em;
+}
+.bubble5 {
+  top: 15em;
+  right: 5em;
+}
+.bubble6 {
+  top: 38em;
+  right: 5em;
+}
+.bubble7 {
+  top: 38em;
+  left: 2em;
+}
+.bubble8 {
+  top: 12em;
+  left: 2em;
+}
+@media only screen and (max-width: 1080px) {
+  .Home {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .introduction {
+    height: auto;
+    width: 95%;
+  }
+  .bubble3 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 454px) {
+  .circle {
+    width: 100%;
+    height: 100%;
+  }
+  .prof_img {
+    aspect-ratio: 1 / 1.1;
+    max-width: 90%;
+  }
+  .photo {
+    height: 15em;
+    transform: scale(1.1);
+    transition: transform 350ms ease;
+  }
+}
+.vertical_bar {
+  height: 6em;
+  width: 3px;
+  background-color: rgb(28, 28, 44);
+}
+.verticalBarContainer {
+  position: fixed;
+  left: 4em;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  z-index: 8;
+}
+.icons {
+  color: rgb(0, 0, 0);
+  font-size: 1.8em;
+}
+.linkdin {
+  color: rgb(13, 13, 175);
+}

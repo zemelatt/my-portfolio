@@ -1,0 +1,149 @@
+.work {
+  background-color: rgb(234, 239, 244);
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0em;
+}
+
+.aboutWork {
+  background-color: rgb(234, 239, 244);
+}
+.myWorks {
+  position: relative;
+  max-width: 1100px;
+  height: 20em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 1em;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  transition: 1000ms ease;
+  transform: rotateX(-90deg);
+}
+.startRotat {
+  transform: rotateX(0deg);
+}
+.workCover {
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(159, 152, 152, 0),
+    rgb(158, 143, 143)
+  );
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+}
+.imgDisplay {
+  position: relative;
+  height: 100%;
+  width: 70%;
+}
+.advImg {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.coverLay {
+  position: absolute;
+  width: 0;
+  margin-bottom: -30em;
+  /* top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  background-color: rgba(16, 15, 15, 0.65);
+  overflow: hidden;
+  transition: 0.5s ease;
+  height: 100%;
+  border-radius: 20px;
+}
+.myWorks:hover .coverLay {
+  width: 100%;
+}
+.checkIcon {
+  color: blue;
+  cursor: pointer;
+}
+.check {
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4em auto;
+}
+.aboutWEB {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  font-size: calc(16px + 0.5vw);
+}
+.topic {
+  color: brown;
+  width: 80%;
+  height: auto;
+}
+.webAbility {
+  color: rgb(77, 77, 78);
+}
+.webDescription {
+  width: 90%;
+  color: rgb(0, 0, 0);
+  margin-top: 0.5em;
+}
+
+@media only screen and (max-width: 750px) {
+  .myWorks {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 90%;
+    gap: 1em;
+  }
+  .work {
+    height: auto;
+  }
+  .imgDisplay {
+    width: 100%;
+    height: 45%;
+  }
+  .topic {
+    width: 95%;
+    height: auto;
+  }
+  .aboutWEB {
+    width: 90%;
+    height: 60%;
+    gap: 1em;
+  }
+  .coverLay {
+    margin-bottom: -21.7em;
+    border-radius: 20px;
+  }
+  .check {
+    margin: 3em auto;
+  }
+  .workCover {
+    background-image: linear-gradient(
+      to top,
+      rgba(255, 0, 0, 0),
+      rgba(159, 152, 152, 0),
+      rgb(174, 67, 67)
+    );
+  }
+}
