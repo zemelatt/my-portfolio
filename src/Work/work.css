@@ -74,13 +74,17 @@
 .checkIcon {
   color: blue;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .check {
   font-size: 3em;
   display: flex;
-  align-items: center;
+
   justify-content: center;
-  margin: 4em auto;
+  text-align: center;
+  margin: 10% auto;
 }
 .aboutWEB {
   width: 50%;
@@ -136,7 +140,7 @@
     border-radius: 20px;
   }
   .check {
-    margin: 3em auto;
+    margin: 1em auto;
   }
   .workCover {
     background-image: linear-gradient(

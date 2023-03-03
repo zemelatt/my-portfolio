@@ -22,7 +22,7 @@
   transition: transform 250ms ease-in-out;
 }
 .prof_img:hover {
-  transform: scale(1.1);
+  transform: scale(1);
 }
 .prof_img:hover .photo {
   transform: scale(1.2) translateY(-1.5rem);
@@ -40,6 +40,7 @@
   height: 25em;
   bottom: 0;
   background-color: brown;
+  /* background-color: rgb(65, 65, 130, 0.3); */
   z-index: -1;
   object-fit: cover;
   width: 90%;
