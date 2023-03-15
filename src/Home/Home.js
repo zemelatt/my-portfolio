@@ -11,7 +11,6 @@ function Home() {
         <FaLinkedin className="icons linkdin" />
         <div className="vertical_bar"></div>
       </div>
-
       <div className="bubble1"></div>
       <div className="bubble2"></div>
       <div className="bubble3"></div>

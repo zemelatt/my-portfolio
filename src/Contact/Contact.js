@@ -32,20 +32,20 @@ const Contact = () => {
           <div>
             Contact me via Email <address>zemelatmen@gmail.com</address>{" "}
           </div>
-          <a
+          {/* <a
             href="https://github.com/zemelatt?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
           >
             Github
-          </a>
-          <a
+          </a> */}
+          {/* <a
             href="https://www.linkedin.com/in/zemelat-menber-a96088256?trk=contact-info"
             target="_blank"
             rel="noopener noreferrer"
           >
             LinkedIn
-          </a>
+          </a> */}
         </div>
       </div>
     </>

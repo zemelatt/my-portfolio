@@ -7,13 +7,29 @@ import { AiOutlineLine } from "react-icons/ai";
 // import { FaRegArrowAltCircleRight } from "react-icons/fa";
 function Contact() {
   const [fade, setFade] = useState("");
-
+  const [scaleing, setScale] = useState("");
+  const [scaleing1, setScale1] = useState("scaling1");
+  const [fade1, setFade1] = useState("");
   window.addEventListener("scroll", () => {
     let workPostion = window.scrollY;
+
     if (workPostion > 300 && workPostion < 1300) {
       setFade("fade");
+      setFade1("fade1");
     } else {
       setFade("no");
+      setFade1("");
+    }
+  });
+  window.addEventListener("scroll", () => {
+    let scalePostion = window.scrollY;
+
+    if (scalePostion > 850 && scalePostion < 1600) {
+      setScale("scaling");
+      setScale1("scaling1");
+    } else {
+      setScale("");
+      setScale1("");
     }
   });
 
@@ -29,12 +45,12 @@ function Contact() {
         <div className="imgContainerAbout">
           <img className="AboutImg" src={Img} alt="carton" />
         </div>
-        <div className="SubContainer">
+        <div className={`SubContainer ${fade1}`}>
           <div className="moreAbout">
             I'm <span className="name">Zemelat menber</span>, who's well
             practised in taking{" "}
-            <span className="name">fullstack applications</span> from scratch.
-            I've worked using different technologies, both backend and frontend.
+            <span className="name">fullstack applications</span> from scratch,
+            backend and frontend.
           </div>
           <div className="aboutBehave">
             Always seeking to be inspired, to envision the unlikely, to
@@ -50,9 +66,9 @@ function Contact() {
         </div>
       </div>
       <div className="OtherPeople">
-        <div className="whatPeople">What people say..</div>
+        <div className={`whatPeople ${scaleing}`}>What people say..</div>
         <div className="peopleContainer">
-          <div className="personDiv1">
+          <div className={`personDiv1 ${scaleing}`}>
             <div className="imgDiv">
               <p className="nameOfRef">Biruk anley</p>
               <img src={Person} className="personImg" alt="ref pics" />
@@ -72,7 +88,7 @@ function Contact() {
               <p className="email">email: birukanley2022@gmail.com</p>
             </div>
           </div>
-          <div className="personDiv2">
+          <div className={`personDiv2 ${scaleing1}`}>
             <div className="imgDiv">
               <p className="nameOfRef">Keberleab eniyew</p>
               <img src={Person} className="personImg" alt="refpics" />

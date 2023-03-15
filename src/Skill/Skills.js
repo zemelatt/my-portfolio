@@ -14,10 +14,11 @@ import { DiGit } from "react-icons/di";
 import { SiVisualstudiocode } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { DiPython } from "react-icons/di";
-import { DiDjango } from "react-icons/di";
+// import { DiDjango } from "react-icons/di";
 import { TbBrandNextjs } from "react-icons/tb";
 import { DiMongodb } from "react-icons/di";
-// import { SiMui } from "react-icons/si";
+import { SiPhp } from "react-icons/si";
+import { TbBrandLaravel } from "react-icons/tb";
 
 const Skills = () => {
   const [html, setHtml] = useState("");
@@ -33,7 +34,7 @@ const Skills = () => {
   const [redux, setRedux] = useState("");
   window.addEventListener("scroll", () => {
     let Ypos = window.scrollY;
-    if (Ypos > 1181 && Ypos < 2300) {
+    if (Ypos > 1500 && Ypos < 2300) {
       setHtml("ofHtml");
       setCss("ofCss");
       setJs("ofJs");
@@ -75,56 +76,65 @@ const Skills = () => {
         <div className="skill_container">
           <div className="skill_list">
             <ul className="skillList1">
-              <li className={`skills html ${html}`}>
-                <AiFillHtml5 className="listIcon html" />
-                Html
+              <li className={`skills docker ${docker}`}>
+                <DiDocker className="listIcon docker" /> <div>Docker</div>
               </li>
-              <li className={`skills css ${css}`}>
-                <FaCss3Alt className="listIcon css" /> Css
+              <li className={`skills mysql ${mysql}`}>
+                <SiPhp className="listIcon php" /> PHP
               </li>
-              {/* <li className={`skills css ${css}`}>
-                <SiMui className="listIcon css" /> Matrial UI
-              </li> */}
+              <li className={`skills mysql ${figma} `}>
+                <TbBrandLaravel className="listIcon laravel" />
+                Laravel
+              </li>
               <li className={`skills js ${js}`}>
                 <SiJavascript className="listIcon js" /> Javascript
               </li>
-              <li className={`skills js ${js}`}>
-                <DiPython className="listIcon js" /> Python
-              </li>
               <li className={`skills react ${react}`}>
-                <FaReact className="listIcon  react" /> React
+                <FaReact className="listIcon react" /> React
               </li>
               <li className={`skills redux ${redux}`}>
                 <SiRedux className="listIcon redux" /> Redux/toolkit
               </li>
-              <li className={`skills figma ${figma} `}>
-                <DiDjango className="listIcon figma" /> Django
+              <li className={`skills redux ${figma} `}>
+                <TbBrandNextjs className="listIcon redux" /> Next.js
               </li>
-              <li className={`skills figma ${figma} `}>
-                <TbBrandNextjs className="listIcon figma" /> Next.js
+
+              <li className={`skills js ${js}`}>
+                <DiPython className="listIcon js" /> Python
               </li>
+
               <li className={`skills mysql ${mysql}`}>
                 <SiMysql className="listIcon mysql" /> MySQL
               </li>
-              <li className={`skills mongo figma ${figma} `}>
-                <DiMongodb className="listIcon mongo figma" /> Mongodb
-              </li>
-              {/* </ul>
-            <ul className="skillList2 "> */}
-              <li className={`skills github ${github}`}>
-                <AiFillGithub className="listIcon github" />
-                Github
+              <li className={`skills mysql figma ${figma} `}>
+                <DiMongodb className="listIcon mongo " /> Mongodb
               </li>
               <li className={`skills git ${git}`}>
                 <DiGit className="listIcon git" /> Git
               </li>
-              <li className={`skills docker ${docker}`}>
-                <DiDocker className="listIcon docker" /> Docker
+              <li className={`skills github ${github}`}>
+                <AiFillGithub className="listIcon github" />
+                Github
               </li>
               <li className={`skills figma ${figma}`}>
                 <FiFigma className="listIcon figma" /> Figma
               </li>
-              <li className={`skills vscode ${vscode}`}>
+
+              <li className={`skills css ${css}`}>
+                <FaCss3Alt className="listIcon css" /> Css
+              </li>
+              <li className={`skills html ${html}`}>
+                <AiFillHtml5 className="listIcon html" />
+                Html
+              </li>
+              {/* <li className={`skills css ${css}`}>
+                <SiMui className="listIcon css" /> Matrial UI
+              </li> */}
+
+              {/* </ul>
+            <ul className="skillList2 "> */}
+
+              <li className={`skills figma ${vscode}`}>
                 <SiVisualstudiocode className="listIcon vscode" /> Vs code
               </li>
             </ul>

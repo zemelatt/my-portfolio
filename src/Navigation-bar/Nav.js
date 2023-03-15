@@ -17,27 +17,37 @@ function Nav() {
     <div className="nav">
       <ul className="Navigationlist">
         <li>
-          <a href="#home" className="logo">
+          <a href="#home" id="logo" className="logo">
             <span className="ang">&lang;</span>
-            Z.M
+            ZM
             <span className="ang">&rang;</span>
           </a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact" id="navops">
+            Contact
+          </a>
         </li>
         <li>
-          <a href="#work">Work</a>
+          <a href="#work" id="navops">
+            Work
+          </a>
         </li>
         <li>
-          <a href="#skill">Skill</a>
+          <a href="#skill" id="navops">
+            Skill
+          </a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about" id="navops">
+            About
+          </a>
         </li>
 
         <li>
-          <a href="#home">Home</a>
+          <a href="#home" id="navops">
+            Home
+          </a>
         </li>
         <>
           <button className={burger} onClick={updatemenu}>

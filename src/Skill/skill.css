@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Kaushan+Script&family=Lato:wght@100&family=Lobster+Two&family=Merriweather:wght@300&family=Roboto:wght@100&family=Rubik+Vinyl&family=Satisfy&family=Spectral:ital,wght@1,200&family=Tilt+Prism&display=swap");
+
 .Skill {
   height: 100vh;
   width: 100%;
@@ -6,9 +8,12 @@
   align-items: center;
   justify-content: center;
 }
+.aboutSkill {
+  font-family: "Golos Text", sans-serif;
+}
 .aboutSkill,
 .Skill {
-  background-color: rgb(214, 224, 224);
+  background-color: rgb(255, 255, 255);
 }
 .skill_header {
   width: 80%;
@@ -27,7 +32,7 @@
   min-height: 30em;
   margin: auto auto;
   gap: 1.5em;
-  background-color: rgb(225, 229, 229);
+  background-color: rgb(248, 251, 251);
 }
 .skill_container {
   width: 100%;
@@ -43,11 +48,13 @@
   align-items: center;
   gap: 0.5em;
   min-height: 1em;
-  width: 4em;
-  font-size: calc(2px + 0.3vw);
+  min-width: 1em;
+  /* font-size: calc(2px + 0.3vw); */
+  font-size: calc(15px + 0.3vw);
+  font-family: "Merriweather", serif;
   color: rgb(27, 20, 20);
   opacity: 0;
-  transform: rotateX(0deg);
+  transform: rotateX(180deg);
 }
 
 .ofHtml,
@@ -63,34 +70,28 @@
 .ofredux {
   opacity: 1;
   transform: rotateX(360deg);
-  font-size: calc(17px + 0.3vw);
 }
 
 .skillList1,
 .skillList2 {
   display: flex;
   flex-direction: row;
-  gap: calc(4em + 1vw);
+  gap: calc(3em + 1vw);
   width: 90%;
-  /* justify-content: center; */
   flex-wrap: wrap;
 }
 .listIcon {
   font-size: calc(1em + 5vw);
-  color: rgb(31, 30, 30);
+  color: rgb(31, 26, 26);
 }
-/* .listIcon:hover {
-  color: rgb(140, 10, 10);
-} */
+
 @media only screen and (max-width: 500px) {
   * .skill_container {
     width: 98%;
   }
-
   .skill_list {
     width: 90%;
     /* margin: 1em; */
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -147,42 +148,49 @@
 .js:hover {
   color: rgb(186, 209, 36);
 }
+.php:hover {
+  color: rgb(93, 76, 154);
+}
+.laravel:hover {
+  color: rgb(209, 62, 36);
+}
 .css:hover {
   color: rgb(18, 63, 210);
 }
 .html:hover {
   color: rgb(220, 102, 6);
 }
-.html {
-  transition: 100ms ease-in-out;
-}
-.css {
-  transition: 200ms ease-in-out;
-}
-.js {
-  transition: 300ms ease-in-out;
+.docker {
+  transition: 0.3s ease;
 }
 .react {
-  transition: 400ms ease-in-out;
+  transition: 0.6s ease;
 }
 .redux {
-  transition: 500ms ease-in-out;
+  transition: 0.9s ease;
 }
+.js {
+  transition: 1.2s ease;
+}
+
 .mysql {
-  transition: 600ms ease-in-out;
+  transition: 1.5s ease;
 }
 .github {
-  transition: 700ms ease-in-out;
+  transition: 1.8s ease;
 }
 .git {
-  transition: 800ms ease-in-out;
-}
-.docker {
-  transition: 900ms ease-in-out;
+  transition: 2.1s ease;
 }
 .figma {
-  transition: 1000ms ease-in-out;
+  transition: 2.4s ease;
+}
+.html {
+  transition: 2.7s ease;
+}
+.css {
+  transition: 3s ease;
 }
 .vscode {
-  transition: 1100ms ease-in-out;
+  transition: 3.3s ease;
 }

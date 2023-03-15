@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Kaushan+Script&family=Lobster+Two&family=Satisfy&family=Spectral:ital,wght@1,200&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Kaushan+Script&family=Lobster+Two&family=Satisfy&family=Spectral:ital,wght@1,200&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Kaushan+Script&family=Lato:wght@100&family=Lobster+Two&family=Merriweather:wght@300&family=Roboto:wght@100&family=Rubik+Vinyl&family=Satisfy&family=Spectral:ital,wght@1,200&family=Tilt+Prism&display=swap");
 .Home {
   height: 100vh;
   width: 100%;
@@ -8,7 +9,7 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  background-color: rgb(234, 239, 244);
+  background-color: rgb(255, 255, 255);
 }
 
 .prof_img {
@@ -39,8 +40,8 @@
   width: 15em;
   height: 25em;
   bottom: 0;
-  background-color: brown;
-  /* background-color: rgb(65, 65, 130, 0.3); */
+  background-color: rgba(209, 94, 94, 0.1);
+
   z-index: -1;
   object-fit: cover;
   width: 90%;
@@ -55,16 +56,17 @@
 }
 .moreIntro {
   font-size: 2.6em;
-  color: rgb(106, 118, 118);
-  font-family: "Roboto", sans-serif;
+  color: rgb(14, 15, 15);
+  font-family: "Merriweather", serif;
+  padding-top: 0.4em;
 }
 .introduction {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  margin-top: 1em;
   justify-content: flex-start;
   width: 35%;
-  /* font-size: calc(1em + 0.4vw); */
+  font-size: calc(0.9em + 0.1vw);
 }
 
 .bubble1,
@@ -79,7 +81,7 @@
   width: 4em;
   height: 4em;
   border-radius: 50%;
-  background-color: rgba(217, 38, 38, 0.1);
+  background-color: rgba(126, 122, 122, 0.1);
   overflow: hidden;
 }
 .bubble1 {
@@ -128,14 +130,17 @@
     display: none;
   }
 }
-@media only screen and (max-width: 454px) {
+@media only screen and (max-width: 657px) {
+  .Home {
+    min-height: 100vh;
+  }
   .circle {
     width: 100%;
     height: 100%;
   }
   .prof_img {
-    aspect-ratio: 1 / 1.1;
-    max-width: 90%;
+    aspect-ratio: 1 / 1;
+    max-width: 100%;
   }
   .photo {
     height: 15em;

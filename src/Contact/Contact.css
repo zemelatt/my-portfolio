@@ -5,6 +5,10 @@
   align-items: center;
   justify-content: center;
 }
+.aboutContact {
+  font-family: "Golos Text", sans-serif;
+}
+
 .aboutContact,
 .contact_container {
   background-color: rgb(214, 224, 224);

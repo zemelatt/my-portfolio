@@ -6,7 +6,7 @@ const WorkProp = ({ nameOfWeb, Descripton1, Descripton2, links, photo }) => {
 
   window.addEventListener("scroll", () => {
     let ScrolPos = window.scrollY;
-    if (ScrolPos > 1750 && ScrolPos < 3000) {
+    if (ScrolPos > 1750 && ScrolPos < 4000) {
       SetRotate("startRotat");
     } else {
       SetRotate("");
@@ -16,7 +16,7 @@ const WorkProp = ({ nameOfWeb, Descripton1, Descripton2, links, photo }) => {
     <div className={`myWorks ${rotate}`}>
       <div className="workCover"></div>
       <div className="aboutWEB">
-        <h2 className="topic">{nameOfWeb}</h2>
+        <h2 className="topic">{nameOfWeb} </h2>
 
         <p className="webDescription">{Descripton1}</p>
 
